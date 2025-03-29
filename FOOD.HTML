@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Food Ordering System</h1>
+    </header>
+
+    <div class="container">
+        <div class="food-menu">
+            <h2>Menu</h2>
+            <div class="food-item">
+                <img src="pizza.jpg" alt="Pizza" />
+                <div class="food-details">
+                    <h3>Pizza</h3>
+                    <p>$10.99</p>
+                    <input type="number" id="pizza-qty" value="0" min="0" />
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="burger.jpg" alt="Burger" />
+                <div class="food-details">
+                    <h3>Burger</h3>
+                    <p>$5.99</p>
+                    <input type="number" id="burger-qty" value="0" min="0" />
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="pasta.jpg" alt="Pasta" />
+                <div class="food-details">
+                    <h3>Pasta</h3>
+                    <p>$7.99</p>
+                    <input type="number" id="pasta-qty" value="0" min="0" />
+                </div>
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="order-details">
+                <p>Pizza: $<span id="pizza-price">0</span></p>
+                <p>Burger: $<span id="burger-price">0</span></p>
+                <p>Pasta: $<span id="pasta-price">0</span></p>
+            </div>
+            <div class="total">
+                <h3>Total: $<span id="total-price">0</span></h3>
+            </div>
+            <button id="submit-order">Submit Order</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Food Ordering System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
